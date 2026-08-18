@@ -14,10 +14,6 @@ export default function TrustBar() {
     {
       name: "Instagram",
       url: "https://cdn.simpleicons.org/instagram/ffffff"
-    },
-    {
-      name: "ChatGPT",
-      url: "https://cdn.simpleicons.org/chatgpt/ffffff"
     }
   ];
 
@@ -35,9 +31,13 @@ export default function TrustBar() {
             />
           </div>
         ))}
+        {/* Custom ChatGPT text */}
+        <div className="flex items-center justify-center opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300">
+            <span className="text-white font-extrabold text-2xl tracking-tight">ChatGPT</span>
+        </div>
         {/* Custom Systeme.io text */}
         <div className="flex items-center justify-center opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300">
-            <span className="text-white font-extrabold text-3xl tracking-tighter lowercase">systeme.io</span>
+            <span className="text-white font-extrabold text-2xl tracking-tighter lowercase">systeme.io</span>
         </div>
       </div>
     </div>
