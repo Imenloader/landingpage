@@ -9,7 +9,7 @@ export default function BeforeAfterSection() {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4">الفرق بين الطريقة القديمة وسيستم FAP</h2>
-          <p className="text-gray-500 text-lg">الصورة بتعبر عن ألف كلمة. اختار إنت عايز تكون فين.</p>
+          <p className="text-gray-500 text-lg">دي مش مجرد وعود.. ده الواقع اللي هتعيشه بنفسك لو طبقت صح.</p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">

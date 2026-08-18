@@ -4,7 +4,7 @@ import React from 'react';
 export default function TrustBar() {
   return (
     <div className="w-full bg-[#0F172A] border-y border-white/10 py-8 overflow-hidden flex flex-col items-center z-20 relative">
-      <p className="text-gray-400 text-sm font-medium mb-6 uppercase tracking-wider">كما ظهر في / موثوق من قبل</p>
+      <p className="text-gray-400 text-sm font-medium mb-6 uppercase tracking-wider">المهارات والأدوات اللي بنعلمها بتستخدم في أكبر المنصات</p>
       <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-50 grayscale hover:grayscale-0 transition-all">
         {/* Logos Placeholders */}
         {[1, 2, 3, 4, 5].map((i) => (

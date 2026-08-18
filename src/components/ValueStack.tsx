@@ -30,7 +30,7 @@ export default function ValueStack() {
         </div>
 
         <div className="bg-amber-50 p-6 rounded-2xl flex justify-between items-center mb-8 border border-amber-100">
-          <span className="font-bold text-amber-800 text-lg">إجمالي القيمة الفورية:</span>
+          <span className="font-bold text-amber-800 text-lg">إجمالي القيمة الفعلية:</span>
           <span className="font-extrabold text-amber-600 text-3xl line-through">$2,500</span>
         </div>
 
