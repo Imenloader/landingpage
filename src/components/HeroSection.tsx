@@ -1,6 +1,7 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from "next/link";
 import { MessageCircle, Clock, ArrowLeft } from 'lucide-react';
 
 export default function HeroSection() {
@@ -19,59 +20,30 @@ export default function HeroSection() {
         
         {/* Visual Scarcity */}
         <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-bold mb-8 backdrop-blur-md shadow-[0_0_20px_rgba(239,68,68,0.2)]"
-        >
-          <Clock size={16} className="animate-pulse" />
-          فاضل 7 أماكن بس بالسعر ده قبل ما يزيد بكرة ⏰
-        </motion.div>
-
-        <motion.h1 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-5xl md:text-7xl lg:text-[5.5rem] font-extrabold mb-8 tracking-tighter text-white leading-[1.1]"
-        >
-          تخيل تصحى تلاقي <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-l from-blue-400 via-indigo-400 to-purple-400">جدولك مليان عملاء.</span> أخيراً.
-        </motion.h1>
-
-        <motion.p 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-xl md:text-2xl text-gray-400 max-w-3xl mb-12 font-light leading-relaxed"
-        >
-          شوف نفسك بتدير بيزنس ديجيتال بيكسب بجد. حس بالثقة العميقة وإنت عارف إزاي تجذب عملاء VIP وتطلق منتجات بتتباع كلها. <strong className="text-white">غير</strong> مسار حياتك المهنية النهاردة.
-        </motion.p>
-
-        <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col gap-4 w-full sm:w-auto"
         >
-          {/* Primary CTA: WhatsApp */}
+          {/* Primary CTA: Checkout */}
+          <Link 
+            href="/checkout"
+            className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#059669] text-white font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(5,150,105,0.4)]"
+          >
+            👈 تأكيد مكاني والبدء فوراً (الأماكن محدودة)
+            <ArrowLeft size={24} className="group-hover:-translate-x-1 transition-transform" />
+          </Link>
+
+          {/* Secondary CTA: WhatsApp */}
           <a 
             href="https://wa.me/1234567890"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#059669] text-white font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(37,211,102,0.4)]"
+            className="group flex items-center justify-center gap-2 px-8 py-3 bg-transparent text-gray-400 hover:text-white font-medium rounded-full text-sm transition-all"
           >
-            👈 احجز خطة نجاحك الشخصية (أماكن محدودة)
-            <MessageCircle size={24} className="group-hover:scale-110 transition-transform" />
+            <MessageCircle size={18} />
+            متردد؟ تواصل مع فريقنا على الواتساب
           </a>
-
-          {/* Secondary CTA: Form */}
-          <button 
-            onClick={scrollToForm}
-            className="group flex items-center justify-center gap-3 px-8 py-4 bg-transparent border-2 border-white/20 text-white font-bold rounded-full text-lg transition-all hover:bg-[#FCFBF8] hover:text-black"
-          >
-            أيوه! عايز أبدأ التغيير [3 خطوات بس]
-            <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
-          </button>
         </motion.div>
         
         <motion.p 
