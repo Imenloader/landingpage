@@ -17,7 +17,7 @@ export default function TrustBar() {
     },
     {
       name: "ChatGPT",
-      url: "https://cdn.simpleicons.org/openai/ffffff"
+      url: "https://cdn.simpleicons.org/chatgpt/ffffff"
     }
   ];
 
