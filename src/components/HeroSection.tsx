@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[85vh] flex flex-col items-center justify-start px-4 overflow-hidden bg-[#0F172A]">
+    <section className="relative w-full pb-20 flex flex-col items-center justify-start px-4 overflow-hidden bg-[#0F172A]">
       {/* Dynamic Background Effects */}
       <div className="absolute top-1/4 right-1/2 translate-x-1/2 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
