@@ -71,7 +71,7 @@ export default function HeroSectionNeuromarketing() {
         >
           <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-[0_0_50px_rgba(79,70,229,0.2)]">
             <div className="absolute inset-0 bg-gradient-to-r from-[#0F172A] to-transparent opacity-40 z-10 pointer-events-none"></div>
-            <img 
+            <img loading="lazy" 
               src="/images/instructor_hero.jpg" 
               alt="Instructor" 
               className="w-full h-auto object-cover transform -scale-x-100" 

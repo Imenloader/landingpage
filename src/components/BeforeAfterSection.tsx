@@ -20,7 +20,7 @@ export default function BeforeAfterSection() {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">حياتك دلوقتي (الإرهاق)</h3>
             <div className="w-full aspect-video rounded-2xl overflow-hidden mb-6 relative shadow-inner">
-              <img src="/images/before_stress.jpg" alt="Exhausted freelancer" className="w-full h-full object-cover grayscale-[30%] contrast-125" />
+              <img loading="lazy" src="/images/before_stress.jpg" alt="Exhausted freelancer" className="w-full h-full object-cover grayscale-[30%] contrast-125" />
             </div>
             <ul className="text-right space-y-3 w-full text-gray-600 font-medium">
               <li>❌ بتدور على عملاء كل يوم من الصفر</li>
@@ -37,7 +37,7 @@ export default function BeforeAfterSection() {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">حياتك بعد السيستم (التحكم)</h3>
             <div className="w-full aspect-video rounded-2xl overflow-hidden mb-6 relative shadow-[0_0_30px_rgba(16,185,129,0.2)]">
-              <img src="/images/after_control.jpg" alt="Relaxed and in control" className="w-full h-full object-cover saturate-110" />
+              <img loading="lazy" src="/images/after_control.jpg" alt="Relaxed and in control" className="w-full h-full object-cover saturate-110" />
             </div>
             <ul className="text-right space-y-3 w-full text-gray-600 font-medium">
               <li>✅ العملاء هما اللي بيطلبوا يشتغلوا معاك</li>

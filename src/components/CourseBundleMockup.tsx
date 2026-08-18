@@ -20,7 +20,7 @@ export default function CourseBundleMockup() {
           <div className="absolute inset-0 bg-gradient-to-tr from-slate-900 via-indigo-900/40 to-slate-900 opacity-80"></div>
           
           <div className="relative z-10 w-full px-4 flex items-center justify-center">
-            <img 
+            <img loading="lazy" 
               src="/images/bundle_mockup.jpg" 
               alt="Course Bundle 3D Mockup" 
               className="w-full max-w-[700px] hover:scale-105 transition-transform duration-500 drop-shadow-[0_20px_50px_rgba(16,185,129,0.3)] rounded-2xl" 

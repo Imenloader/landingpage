@@ -16,10 +16,12 @@ import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import EmailCapture from "@/components/EmailCapture";
 import Footer from "@/components/Footer";
+import StickyWhatsApp from "@/components/StickyWhatsApp";
+import ExitIntentPopup from "@/components/ExitIntentPopup";
 
 // A/B TESTING SWITCH
 // Change this to 'false' to show the original HeroSection
-const USE_NEUROMARKETING_HERO = true;
+const USE_NEUROMARKETING_HERO = false;
 
 export default function Home() {
   return (
@@ -43,6 +45,10 @@ export default function Home() {
       <FAQSection />
       <EmailCapture />
       <Footer />
+      
+      {/* Psychological Conversion Boosters */}
+      <StickyWhatsApp />
+      <ExitIntentPopup />
     </main>
   );
 }

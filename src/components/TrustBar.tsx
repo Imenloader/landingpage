@@ -24,7 +24,7 @@ export default function TrustBar() {
       <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16">
         {logos.map((logo, i) => (
           <div key={i} className="flex items-center justify-center opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300">
-            <img 
+            <img loading="lazy" 
               src={logo.url} 
               alt={logo.name} 
               className="h-8 md:h-10 object-contain"
