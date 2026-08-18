@@ -9,13 +9,13 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[95vh] flex flex-col items-center justify-center px-4 overflow-hidden bg-[#0F172A]">
+    <section className="relative w-full min-h-[85vh] flex flex-col items-center justify-start px-4 overflow-hidden bg-[#0F172A]">
       {/* Dynamic Background Effects */}
       <div className="absolute top-1/4 right-1/2 translate-x-1/2 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay pointer-events-none"></div>
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center pt-20">
+      <div className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center pt-32 md:pt-40">
         
         {/* Visual Scarcity */}
         <motion.div 
