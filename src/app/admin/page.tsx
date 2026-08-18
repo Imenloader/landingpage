@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from 'react';
-import { Loader2, Save, Github } from 'lucide-react';
+import { Loader2, Save, Settings } from 'lucide-react';
 
 export default function AdminPage() {
   const [token, setToken] = useState('');
@@ -124,7 +124,7 @@ export default function AdminPage() {
       <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200">
         <div className="bg-slate-900 p-8 text-white">
           <div className="flex items-center gap-3 mb-2">
-            <Github className="w-8 h-8" />
+            <Settings className="w-8 h-8" />
             <h1 className="text-3xl font-black">A/B Test Admin</h1>
           </div>
           <p className="text-slate-400">Manage live Vercel deployments directly via GitHub API</p>
