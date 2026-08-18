@@ -15,7 +15,7 @@ export default function HeroSection() {
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay pointer-events-none"></div>
 
-      <div className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center pt-32 md:pt-40">
+      <div className="relative z-10 text-right max-w-5xl mx-auto flex flex-col items-start pt-32 md:pt-40">
         
         {/* Visual Scarcity */}
         <motion.div 
@@ -60,7 +60,7 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#059669] text-white font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(37,211,102,0.4)]"
           >
-            👉 احجز خطة نجاحك الشخصية (أماكن محدودة)
+            👈 احجز خطة نجاحك الشخصية (أماكن محدودة)
             <MessageCircle size={24} className="group-hover:scale-110 transition-transform" />
           </a>
 

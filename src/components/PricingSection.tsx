@@ -75,7 +75,7 @@ export default function PricingSection() {
               </div>
 
               <button className="w-full py-5 mb-8 bg-[#059669] text-white font-extrabold rounded-xl hover:scale-105 transition-transform shadow-[0_0_30px_rgba(37,211,102,0.4)] text-lg">
-                👉 احجز خطة نجاحك الشخصية
+                👈 احجز خطة نجاحك الشخصية
               </button>
 
               <ul className="space-y-5">
