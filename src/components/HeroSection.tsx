@@ -28,7 +28,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight md:leading-tight mb-8 tracking-tighter"
         >
-          السيستم الوحيد اللي هياخدك من <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">التوهان</span> إلى <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">أول 100,000 جنيه</span> أونلاين
+          السيستم الوحيد اللي هياخدك من <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">التوهان</span> إلى <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">أول أرباحك الحقيقية</span> أونلاين
         </motion.h1>
 
         <motion.p 
