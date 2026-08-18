@@ -12,26 +12,26 @@ const valueItems = [
 
 export default function ValueStack() {
   return (
-    <section className="w-full py-20 px-4 bg-gray-50 flex flex-col items-center">
-      <div className="max-w-3xl w-full bg-white rounded-[2.5rem] shadow-2xl p-8 md:p-12 border-2 border-blue-100 relative mt-10">
-        <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg">
+    <section className="w-full py-20 px-4 bg-[#F8FAFC] flex flex-col items-center">
+      <div className="max-w-3xl w-full bg-[#FCFBF8] rounded-[2.5rem] shadow-2xl p-8 md:p-12 border-2 border-indigo-100 relative mt-10">
+        <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-indigo-600 rounded-full flex items-center justify-center text-white shadow-lg">
           <Gift size={32} />
         </div>
         
-        <h2 className="text-3xl font-extrabold text-center text-gray-900 mb-8 mt-4">القيمة الحقيقية اللي هتاخدها:</h2>
+        <h2 className="text-3xl font-extrabold text-center text-[#0F172A] mb-8 mt-4">القيمة الحقيقية اللي هتاخدها:</h2>
         
         <div className="space-y-4 mb-8">
           {valueItems.map((item, i) => (
             <div key={i} className="flex justify-between items-center border-b border-gray-100 pb-4">
               <span className="text-gray-700 font-medium">{item.name}</span>
-              <span className="font-bold text-gray-900 text-xl">{item.value}</span>
+              <span className="font-bold text-[#0F172A] text-xl">{item.value}</span>
             </div>
           ))}
         </div>
 
-        <div className="bg-red-50 p-6 rounded-2xl flex justify-between items-center mb-8 border border-red-100">
-          <span className="font-bold text-red-800 text-lg">إجمالي القيمة الفورية:</span>
-          <span className="font-extrabold text-red-600 text-3xl line-through">$2,500</span>
+        <div className="bg-amber-50 p-6 rounded-2xl flex justify-between items-center mb-8 border border-amber-100">
+          <span className="font-bold text-amber-800 text-lg">إجمالي القيمة الفورية:</span>
+          <span className="font-extrabold text-amber-600 text-3xl line-through">$2,500</span>
         </div>
 
         <div className="text-center">
@@ -39,7 +39,7 @@ export default function ValueStack() {
           <motion.div 
             animate={{ y: [0, 10, 0] }} 
             transition={{ repeat: Infinity, duration: 2 }}
-            className="flex justify-center text-blue-500"
+            className="flex justify-center text-indigo-500"
           >
             <ArrowDown size={32} />
           </motion.div>

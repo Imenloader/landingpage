@@ -10,7 +10,7 @@ const timeline = [
 
 export default function FuturePacing() {
   return (
-    <section className="w-full py-24 px-4 bg-[#030712] text-white overflow-hidden relative">
+    <section className="w-full py-24 px-4 bg-[#0F172A] text-white overflow-hidden relative">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">شكل حياتك بعد ما تبدأ معانا:</h2>
@@ -31,11 +31,11 @@ export default function FuturePacing() {
                 transition={{ delay: i * 0.2 }}
                 className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-12"
               >
-                <div className="w-16 h-16 rounded-full bg-gray-900 border-4 border-blue-500 flex items-center justify-center shrink-0 z-10 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
+                <div className="w-16 h-16 rounded-full bg-[#1E293B] border-4 border-indigo-500 flex items-center justify-center shrink-0 z-10 shadow-[0_0_20px_rgba(59,130,246,0.5)]">
                   <span className="font-bold text-sm">{item.day}</span>
                 </div>
-                <div className="bg-white/5 border border-white/10 p-8 rounded-3xl flex-1 backdrop-blur-sm hover:bg-white/10 transition-colors">
-                  <h3 className="text-2xl font-bold mb-3 text-blue-300">{item.title}</h3>
+                <div className="bg-[#FCFBF8]/5 border border-white/10 p-8 rounded-3xl flex-1 backdrop-blur-sm hover:bg-[#FCFBF8]/10 transition-colors">
+                  <h3 className="text-2xl font-bold mb-3 text-indigo-300">{item.title}</h3>
                   <p className="text-gray-400 leading-relaxed">{item.desc}</p>
                 </div>
               </motion.div>

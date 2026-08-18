@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function InstructorBio() {
   return (
-    <section className="w-full py-32 px-4 bg-[#030712] text-white relative overflow-hidden">
+    <section className="w-full py-32 px-4 bg-[#0F172A] text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-900/40 via-[#030712] to-[#030712] pointer-events-none"></div>
       
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">
@@ -30,7 +30,7 @@ export default function InstructorBio() {
           viewport={{ once: true }}
           className="w-full md:w-7/12 text-center md:text-right"
         >
-          <div className="inline-block px-4 py-2 rounded-full bg-white/5 border border-white/10 text-blue-300 text-sm font-semibold mb-6">
+          <div className="inline-block px-4 py-2 rounded-full bg-[#FCFBF8]/5 border border-white/10 text-indigo-300 text-sm font-semibold mb-6">
             اعرف أكتر عن مدربك
           </div>
           <h2 className="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight">

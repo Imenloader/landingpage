@@ -19,14 +19,14 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full py-32 px-4 bg-gray-50 flex flex-col items-center">
+    <section className="w-full py-32 px-4 bg-[#F8FAFC] flex flex-col items-center">
       <div className="max-w-3xl w-full">
         <div className="text-center mb-16">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 tracking-tight"
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0F172A] tracking-tight"
           >
             أسئلة بتتكرر كتير
           </motion.h2>
@@ -40,16 +40,16 @@ export default function FAQSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === i ? 'border-blue-500 bg-white shadow-md' : 'border-gray-200 bg-white hover:border-gray-300'}`}
+              className={`border rounded-2xl overflow-hidden transition-all duration-300 ${openIndex === i ? 'border-indigo-500 bg-[#FCFBF8] shadow-md' : 'border-gray-200 bg-[#FCFBF8] hover:border-gray-300'}`}
             >
               <button 
                 onClick={() => toggleFaq(i)}
                 className="w-full px-6 py-6 flex justify-between items-center text-right focus:outline-none"
               >
-                <h3 className={`text-lg font-bold pl-8 ${openIndex === i ? 'text-blue-600' : 'text-gray-900'}`}>
+                <h3 className={`text-lg font-bold pl-8 ${openIndex === i ? 'text-indigo-600' : 'text-[#0F172A]'}`}>
                   {faq.q}
                 </h3>
-                <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${openIndex === i ? 'bg-blue-100 text-blue-600' : 'bg-gray-100 text-gray-400'}`}>
+                <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-colors ${openIndex === i ? 'bg-indigo-100 text-indigo-600' : 'bg-gray-100 text-gray-400'}`}>
                   {openIndex === i ? <Minus size={18} /> : <Plus size={18} />}
                 </div>
               </button>

@@ -11,14 +11,14 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section className="w-full py-32 px-4 bg-gray-50 relative overflow-hidden">
+    <section className="w-full py-32 px-4 bg-[#F8FAFC] relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-20">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 tracking-tight"
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0F172A] tracking-tight"
           >
             تغيير حقيقي من ناس زيك بالظبط
           </motion.h2>
@@ -41,7 +41,7 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white p-10 rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 relative group"
+              className="bg-[#FCFBF8] p-10 rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 relative group"
             >
               <Quote size={40} className="text-gray-100 absolute top-8 left-8 rotate-12 group-hover:rotate-0 transition-transform duration-300 transform scale-x-[-1]" />
               
@@ -49,7 +49,7 @@ export default function Testimonials() {
               
               <div className="flex items-center justify-between border-t border-gray-100 pt-6 mt-auto">
                 <div>
-                  <p className="font-bold text-gray-900">[اسم الطالب]</p>
+                  <p className="font-bold text-[#0F172A]">[اسم الطالب]</p>
                   <p className="text-sm text-gray-500">[مجال الطالب]</p>
                 </div>
               </div>

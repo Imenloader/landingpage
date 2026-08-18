@@ -19,14 +19,14 @@ const dplModules = [
 
 export default function CourseModules() {
   return (
-    <section className="w-full py-32 px-4 bg-white relative">
+    <section className="w-full py-32 px-4 bg-[#FCFBF8] relative">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 tracking-tight"
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0F172A] tracking-tight"
           >
             إيه اللي جوه المنهج؟
           </motion.h2>
@@ -47,26 +47,26 @@ export default function CourseModules() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-blue-50/50 p-8 md:p-12 rounded-[2.5rem] border border-blue-100 relative overflow-hidden"
+            className="bg-indigo-50/50 p-8 md:p-12 rounded-[2.5rem] border border-indigo-100 relative overflow-hidden"
           >
-            <div className="absolute top-0 left-0 w-64 h-64 bg-blue-200/50 blur-[80px] rounded-full pointer-events-none -translate-y-1/2 -translate-x-1/3"></div>
+            <div className="absolute top-0 left-0 w-64 h-64 bg-indigo-200/50 blur-[80px] rounded-full pointer-events-none -translate-y-1/2 -translate-x-1/3"></div>
             
             <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6 mb-12">
-              <div className="w-20 h-20 bg-blue-600 text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-blue-600/20">
+              <div className="w-20 h-20 bg-indigo-600 text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-blue-600/20">
                 <Briefcase size={36} />
               </div>
               <div>
-                <h3 className="text-3xl font-extrabold text-gray-900 mb-2">تسريع الفريلانس (FAP)</h3>
-                <p className="text-blue-700 font-medium">للمحترفين ومقدمي الخدمات</p>
+                <h3 className="text-3xl font-extrabold text-[#0F172A] mb-2">تسريع الفريلانس (FAP)</h3>
+                <p className="text-indigo-700 font-medium">للمحترفين ومقدمي الخدمات</p>
               </div>
             </div>
 
             <div className="space-y-6 relative z-10">
               {fapModules.map((mod, i) => (
                 <div key={i} className="flex gap-4 items-start">
-                  <div className="mt-1"><CheckCircle2 className="text-blue-500" size={24} /></div>
+                  <div className="mt-1"><CheckCircle2 className="text-indigo-500" size={24} /></div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">{mod.title}</h4>
+                    <h4 className="text-xl font-bold text-[#0F172A] mb-2">{mod.title}</h4>
                     <p className="text-gray-600 leading-relaxed">{mod.desc}</p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@ export default function CourseModules() {
                 <MonitorPlay size={36} />
               </div>
               <div>
-                <h3 className="text-3xl font-extrabold text-gray-900 mb-2">إطلاق المشاريع الرقمية (DPL)</h3>
+                <h3 className="text-3xl font-extrabold text-[#0F172A] mb-2">إطلاق المشاريع الرقمية (DPL)</h3>
                 <p className="text-purple-700 font-medium">لصناع المحتوى والمطورين</p>
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function CourseModules() {
                 <div key={i} className="flex gap-4 items-start">
                   <div className="mt-1"><CheckCircle2 className="text-purple-500" size={24} /></div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-900 mb-2">{mod.title}</h4>
+                    <h4 className="text-xl font-bold text-[#0F172A] mb-2">{mod.title}</h4>
                     <p className="text-gray-600 leading-relaxed">{mod.desc}</p>
                   </div>
                 </div>

@@ -9,9 +9,9 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative w-full min-h-[95vh] flex flex-col items-center justify-center px-4 overflow-hidden bg-[#030712]">
+    <section className="relative w-full min-h-[95vh] flex flex-col items-center justify-center px-4 overflow-hidden bg-[#0F172A]">
       {/* Dynamic Background Effects */}
-      <div className="absolute top-1/4 right-1/2 translate-x-1/2 w-[800px] h-[800px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/4 right-1/2 translate-x-1/2 w-[800px] h-[800px] bg-indigo-600/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-purple-600/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-5 mix-blend-overlay pointer-events-none"></div>
 
@@ -22,7 +22,7 @@ export default function HeroSection() {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-bold mb-8 backdrop-blur-md shadow-[0_0_20px_rgba(239,68,68,0.2)]"
+          className="inline-flex items-center gap-3 px-6 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-bold mb-8 backdrop-blur-md shadow-[0_0_20px_rgba(239,68,68,0.2)]"
         >
           <Clock size={16} className="animate-pulse" />
           فاضل 7 أماكن بس بالسعر ده قبل ما يزيد بكرة ⏰
@@ -58,7 +58,7 @@ export default function HeroSection() {
             href="https://wa.me/1234567890"
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#25D366] text-[#075E54] font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(37,211,102,0.4)]"
+            className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#059669] text-white font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(37,211,102,0.4)]"
           >
             👉 احجز خطة نجاحك الشخصية (أماكن محدودة)
             <MessageCircle size={24} className="group-hover:scale-110 transition-transform" />
@@ -67,7 +67,7 @@ export default function HeroSection() {
           {/* Secondary CTA: Form */}
           <button 
             onClick={scrollToForm}
-            className="group flex items-center justify-center gap-3 px-8 py-4 bg-transparent border-2 border-white/20 text-white font-bold rounded-full text-lg transition-all hover:bg-white hover:text-black"
+            className="group flex items-center justify-center gap-3 px-8 py-4 bg-transparent border-2 border-white/20 text-white font-bold rounded-full text-lg transition-all hover:bg-[#FCFBF8] hover:text-black"
           >
             أيوه! عايز أبدأ التغيير [3 خطوات بس]
             <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
