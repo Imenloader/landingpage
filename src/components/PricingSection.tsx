@@ -1,68 +1,135 @@
+"use client";
 import React from 'react';
-import { Check } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Check, Sparkles, Clock, ShieldAlert } from 'lucide-react';
 
 export default function PricingSection() {
   return (
-    <section className="w-full py-20 px-4 bg-gray-50 flex flex-col items-center">
-      <div className="max-w-6xl w-full">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">Choose Your Path</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">Get access to the exact course you need, or bundle both for massive savings.</p>
+    <section className="w-full py-32 px-4 bg-white relative">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 tracking-tight"
+          >
+            إيه تمن إنك تفضل في مكانك؟
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            لو مأخدتش خطوة النهاردة، هتبقى فين كمان 6 شهور؟ لسه مضغوط؟ لسه دخلك قليل؟ جه الوقت إنك تختار طريق أحسن.
+          </motion.p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 items-center">
+        <div className="grid lg:grid-cols-3 gap-8 items-center max-w-6xl mx-auto mb-20">
           {/* Tier 1 */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">FAP Only</h3>
-            <p className="text-gray-500 mb-6">Freelancer Accelerator Program</p>
-            <div className="text-4xl font-bold text-gray-900 mb-6">$297</div>
-            <ul className="space-y-4 mb-8">
-              {['Full FAP Curriculum', 'Proposal Templates', 'Client Acquisition Scripts', 'Lifetime Access'].map((feat, i) => (
-                <li key={i} className="flex items-center text-gray-700">
-                  <Check size={20} className="text-green-500 mr-3 flex-shrink-0" />
-                  <span>{feat}</span>
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white p-8 lg:p-10 rounded-[2rem] border-2 border-gray-100 hover:border-gray-200 transition-colors"
+          >
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">FAP بس</h3>
+            <p className="text-gray-500 mb-8 h-12">احترف جلب العملاء وكبر بيزنس الفريلانس بتاعك.</p>
+            <div className="flex items-baseline gap-2 mb-8">
+              <span className="text-5xl font-extrabold text-gray-900">[السعر]</span>
+            </div>
+            <button className="w-full py-4 mb-8 bg-gray-50 text-gray-900 font-bold rounded-xl hover:bg-gray-100 transition-colors border border-gray-200">احجز مكاني دلوقتي</button>
+            <ul className="space-y-5">
+              {['المنهج الكامل لـ FAP', 'قوالب لكتابة العروض', 'استراتيجيات جلب العملاء', 'دخول مدى الحياة'].map((feat, i) => (
+                <li key={i} className="flex items-start text-gray-700">
+                  <Check size={24} className="text-blue-500 ml-3 flex-shrink-0" />
+                  <span className="leading-snug">{feat}</span>
                 </li>
               ))}
             </ul>
-            <button className="w-full py-3 bg-gray-100 text-gray-900 font-bold rounded-lg hover:bg-gray-200 transition-colors">Select FAP</button>
-          </div>
+          </motion.div>
 
           {/* Tier 2 (Bundle) */}
-          <div className="bg-blue-700 p-8 rounded-2xl shadow-xl border border-blue-600 transform md:-translate-y-4 relative">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-yellow-900 px-4 py-1 rounded-full text-sm font-bold shadow-sm whitespace-nowrap">
-              MOST POPULAR
+          <motion.div 
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="bg-gray-900 p-8 lg:p-12 rounded-[2.5rem] shadow-2xl relative transform lg:-translate-y-4 border border-gray-800"
+          >
+            <div className="absolute inset-0 bg-gradient-to-b from-blue-500/20 to-purple-500/20 rounded-[2.5rem] pointer-events-none"></div>
+            
+            <div className="absolute -top-5 right-1/2 translate-x-1/2 bg-red-500 text-white px-6 py-2 rounded-full text-sm font-bold flex items-center gap-2 shadow-[0_0_20px_rgba(239,68,68,0.5)] whitespace-nowrap animate-bounce">
+              <Clock size={16} /> آخر 4 أماكن ⏰
             </div>
-            <h3 className="text-2xl font-bold text-white mb-2">The Ultimate Bundle</h3>
-            <p className="text-blue-200 mb-6">FAP + DPL Courses</p>
-            <div className="text-4xl font-bold text-white mb-2">$497 <span className="text-lg text-blue-300 line-through font-normal">$594</span></div>
-            <p className="text-yellow-300 text-sm font-semibold mb-6">Save $97</p>
-            <ul className="space-y-4 mb-8">
-              {['Everything in FAP', 'Everything in DPL', 'Bonus: Launch Checklist', 'Bonus: Weekly Q&A', 'Priority Support'].map((feat, i) => (
-                <li key={i} className="flex items-center text-blue-50">
-                  <Check size={20} className="text-yellow-400 mr-3 flex-shrink-0" />
-                  <span>{feat}</span>
-                </li>
-              ))}
-            </ul>
-            <button className="w-full py-3 bg-yellow-400 text-blue-900 font-bold rounded-lg hover:bg-yellow-300 transition-colors">Get The Bundle</button>
-          </div>
+
+            <div className="relative z-10 mt-4">
+              <h3 className="text-3xl font-extrabold text-white mb-2">الباقة الشاملة</h3>
+              <p className="text-gray-400 mb-8 h-12">الخطة الكاملة. كبر خدماتك وأطلق منتجاتك الديجيتال في نفس الوقت.</p>
+              
+              <div className="flex flex-col mb-8">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-6xl font-extrabold text-white">[السعر]</span>
+                </div>
+              </div>
+
+              <button className="w-full py-5 mb-8 bg-[#25D366] text-[#075E54] font-extrabold rounded-xl hover:scale-105 transition-transform shadow-[0_0_30px_rgba(37,211,102,0.4)] text-lg">
+                👉 احجز خطة نجاحك الشخصية
+              </button>
+
+              <ul className="space-y-5">
+                {['كل حاجة في FAP', 'كل حاجة في DPL', 'أي بونص إضافي', 'أولوية في الدعم الفني'].map((feat, i) => (
+                  <li key={i} className="flex items-start text-gray-300">
+                    <Check size={24} className="text-blue-400 ml-3 flex-shrink-0" />
+                    <span className="leading-snug">{feat}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
 
           {/* Tier 3 */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
-            <h3 className="text-2xl font-bold text-gray-900 mb-2">DPL Only</h3>
-            <p className="text-gray-500 mb-6">Digital Project Launch</p>
-            <div className="text-4xl font-bold text-gray-900 mb-6">$297</div>
-            <ul className="space-y-4 mb-8">
-              {['Full DPL Curriculum', 'MVP Templates', 'Launch Marketing Plan', 'Lifetime Access'].map((feat, i) => (
-                <li key={i} className="flex items-center text-gray-700">
-                  <Check size={20} className="text-green-500 mr-3 flex-shrink-0" />
-                  <span>{feat}</span>
+          <motion.div 
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white p-8 lg:p-10 rounded-[2rem] border-2 border-gray-100 hover:border-gray-200 transition-colors"
+          >
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">DPL بس</h3>
+            <p className="text-gray-500 mb-8 h-12">أطلق منتجات وكورسات ديجيتال مربحة.</p>
+            <div className="flex items-baseline gap-2 mb-8">
+              <span className="text-5xl font-extrabold text-gray-900">[السعر]</span>
+            </div>
+            <button className="w-full py-4 mb-8 bg-gray-50 text-gray-900 font-bold rounded-xl hover:bg-gray-100 transition-colors border border-gray-200">احجز مكاني دلوقتي</button>
+            <ul className="space-y-5">
+              {['المنهج الكامل لـ DPL', 'قوالب لإطلاق المنتجات', 'خطة التسويق والمبيعات', 'دخول مدى الحياة'].map((feat, i) => (
+                <li key={i} className="flex items-start text-gray-700">
+                  <Check size={24} className="text-purple-500 ml-3 flex-shrink-0" />
+                  <span className="leading-snug">{feat}</span>
                 </li>
               ))}
             </ul>
-            <button className="w-full py-3 bg-gray-100 text-gray-900 font-bold rounded-lg hover:bg-gray-200 transition-colors">Select DPL</button>
-          </div>
+          </motion.div>
         </div>
+
+        {/* Risk Reversal Guarantee */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-4xl mx-auto bg-blue-50 border border-blue-200 rounded-3xl p-10 flex flex-col md:flex-row items-center gap-8 shadow-lg"
+        >
+          <div className="w-24 h-24 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/30">
+            <ShieldAlert size={48} />
+          </div>
+          <div>
+            <h3 className="text-2xl font-extrabold text-gray-900 mb-3">ضماننا الحديدي اللي مريح بالك</h3>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              إحنا بنضمنلك إنك لو طبقت الخطوات دي، عمرك ما هتحس بقلق إن معندكش عملاء تاني. لو محستش بتغيير جذري في وضوح البيزنس بتاعك وثقتك المالية خلال فترة الضمان، ابعتلنا إيميل وهنرجعلك كل قرش. من غير أي إحراج. <strong className="text-gray-900">تغيير حياتك مضمون 100%.</strong>
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -1,75 +1,110 @@
+"use client";
 import React from 'react';
-import { BookOpen, MonitorPlay, Code, Briefcase, ChevronDown } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { MonitorPlay, Briefcase, CheckCircle2 } from 'lucide-react';
 
 const fapModules = [
-  { title: "Module 1: The Freelance Foundation", desc: "Setting up your business, finding your niche, and branding yourself." },
-  { title: "Module 2: Client Acquisition Mastery", desc: "Outbound and inbound strategies to land your first $5k in clients." },
-  { title: "Module 3: Pricing & Proposals", desc: "How to price your value, write winning proposals, and handle objections." },
+  { title: "الموديول الأول: أساسيات الفريلانس", desc: "تأسيس البيزنس، تحديد النيش، وتظبيط البراند بتاعك عشان تجذب عملاء تقال يقدروا قيمتك." },
+  { title: "الموديول التاني: احتراف جلب العملاء", desc: "استراتيجيات الإيميل البارد، صناعة المحتوى، وإزاي تقفل أول 5000 دولار ليك بثقة." },
+  { title: "الموديول التالت: التسعير والعروض", desc: "إزاي تسعر قيمتك (مش وقتك)، وتكتب عروض مبتترفضش، وتتعامل مع أي اعتراض بذكاء." },
+  { title: "الموديول الرابع: التسليم والتوسع", desc: "إزاي تقدم قيمة رهيبة وتخلي خدماتك عبارة عن منتج سهل تبيعه وتكبر بيه." },
 ];
 
 const dplModules = [
-  { title: "Phase 1: Idea Validation", desc: "How to find profitable digital product ideas that sell." },
-  { title: "Phase 2: Rapid Development", desc: "Building your MVP (Minimum Viable Product) in a weekend." },
-  { title: "Phase 3: The Launch Strategy", desc: "Marketing, funnels, and launching to your audience (even if it's small)." },
+  { title: "المرحلة الأولى: التحقق من الفكرة", desc: "تلاقي أفكار منتجات ديجيتال مربحة وجمهورك مستعد ومتحمس يشتريها." },
+  { title: "المرحلة التانية: التطوير السريع", desc: "تبني المنتج الأولي بتاعك (MVP) في ويك إند واحد من غير كود معقد." },
+  { title: "المرحلة التالتة: استراتيجية الإطلاق", desc: "تعمل ضجة قبل الإطلاق، وتبني صفحات هبوط وإيميلات بتبيع وبتحول الزوار لعملاء." },
+  { title: "المرحلة الرابعة: مبيعات مستمرة", desc: "تعمل أوتوميشن لمسارات التسويق عشان تبيع وإنت نايم وتكبر دخلك السلبي." },
 ];
 
 export default function CourseModules() {
   return (
-    <section className="w-full py-20 px-4 bg-gray-50 flex flex-col items-center">
-      <div className="max-w-6xl w-full">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-gray-900">Inside The Curriculum</h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">Everything you need to succeed, broken down into actionable steps.</p>
+    <section className="w-full py-32 px-4 bg-white relative">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-20">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 tracking-tight"
+          >
+            إيه اللي جوه المنهج؟
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-xl text-gray-600 max-w-3xl mx-auto"
+          >
+            من غير رغي كتير. خطوات عملية متجربة وبتجيب نتيجة في السوق الديجيتال بتاع النهارده.
+          </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* FAP Column */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-            <div className="flex items-center gap-4 mb-8 border-b pb-6">
-              <div className="p-3 bg-blue-100 text-blue-600 rounded-lg">
-                <Briefcase size={28} />
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-blue-50/50 p-8 md:p-12 rounded-[2.5rem] border border-blue-100 relative overflow-hidden"
+          >
+            <div className="absolute top-0 left-0 w-64 h-64 bg-blue-200/50 blur-[80px] rounded-full pointer-events-none -translate-y-1/2 -translate-x-1/3"></div>
+            
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6 mb-12">
+              <div className="w-20 h-20 bg-blue-600 text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-blue-600/20">
+                <Briefcase size={36} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">Freelancer Accelerator Program</h3>
-                <p className="text-gray-500 text-sm">For service-based professionals</p>
+                <h3 className="text-3xl font-extrabold text-gray-900 mb-2">تسريع الفريلانس (FAP)</h3>
+                <p className="text-blue-700 font-medium">للمحترفين ومقدمي الخدمات</p>
               </div>
             </div>
-            <div className="space-y-4">
+
+            <div className="space-y-6 relative z-10">
               {fapModules.map((mod, i) => (
-                <div key={i} className="border border-gray-100 rounded-lg p-4 hover:border-blue-200 transition-colors cursor-pointer group">
-                  <div className="flex justify-between items-center mb-2">
-                    <h4 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors">{mod.title}</h4>
-                    <ChevronDown size={16} className="text-gray-400" />
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="mt-1"><CheckCircle2 className="text-blue-500" size={24} /></div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">{mod.title}</h4>
+                    <p className="text-gray-600 leading-relaxed">{mod.desc}</p>
                   </div>
-                  <p className="text-gray-600 text-sm">{mod.desc}</p>
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* DPL Column */}
-          <div className="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-            <div className="flex items-center gap-4 mb-8 border-b pb-6">
-              <div className="p-3 bg-yellow-100 text-yellow-600 rounded-lg">
-                <MonitorPlay size={28} />
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-purple-50/50 p-8 md:p-12 rounded-[2.5rem] border border-purple-100 relative overflow-hidden"
+          >
+            <div className="absolute top-0 left-0 w-64 h-64 bg-purple-200/50 blur-[80px] rounded-full pointer-events-none -translate-y-1/2 -translate-x-1/3"></div>
+            
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center gap-6 mb-12">
+              <div className="w-20 h-20 bg-purple-600 text-white rounded-2xl flex items-center justify-center shrink-0 shadow-lg shadow-purple-600/20">
+                <MonitorPlay size={36} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-gray-900">Digital Project Launch</h3>
-                <p className="text-gray-500 text-sm">For creators and builders</p>
+                <h3 className="text-3xl font-extrabold text-gray-900 mb-2">إطلاق المشاريع الرقمية (DPL)</h3>
+                <p className="text-purple-700 font-medium">لصناع المحتوى والمطورين</p>
               </div>
             </div>
-            <div className="space-y-4">
+
+            <div className="space-y-6 relative z-10">
               {dplModules.map((mod, i) => (
-                <div key={i} className="border border-gray-100 rounded-lg p-4 hover:border-yellow-200 transition-colors cursor-pointer group">
-                  <div className="flex justify-between items-center mb-2">
-                    <h4 className="font-bold text-gray-900 group-hover:text-yellow-600 transition-colors">{mod.title}</h4>
-                    <ChevronDown size={16} className="text-gray-400" />
+                <div key={i} className="flex gap-4 items-start">
+                  <div className="mt-1"><CheckCircle2 className="text-purple-500" size={24} /></div>
+                  <div>
+                    <h4 className="text-xl font-bold text-gray-900 mb-2">{mod.title}</h4>
+                    <p className="text-gray-600 leading-relaxed">{mod.desc}</p>
                   </div>
-                  <p className="text-gray-600 text-sm">{mod.desc}</p>
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

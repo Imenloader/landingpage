@@ -1,8 +1,12 @@
 import HeroSection from "@/components/HeroSection";
+import VSLSection from "@/components/VSLSection";
+import IdentitySelector from "@/components/IdentitySelector";
 import ValueProposition from "@/components/ValueProposition";
+import FuturePacing from "@/components/FuturePacing";
 import CourseModules from "@/components/CourseModules";
 import InstructorBio from "@/components/InstructorBio";
-import Testimonials from "@/components/Testimonials";
+import RawProofWall from "@/components/RawProofWall";
+import ValueStack from "@/components/ValueStack";
 import PricingSection from "@/components/PricingSection";
 import FAQSection from "@/components/FAQSection";
 import EmailCapture from "@/components/EmailCapture";
@@ -12,10 +16,14 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full">
       <HeroSection />
+      <VSLSection />
+      <IdentitySelector />
       <ValueProposition />
+      <FuturePacing />
       <CourseModules />
       <InstructorBio />
-      <Testimonials />
+      <RawProofWall />
+      <ValueStack />
       <PricingSection />
       <FAQSection />
       <EmailCapture />

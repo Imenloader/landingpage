@@ -1,32 +1,59 @@
+"use client";
 import React from 'react';
-import { Star } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Quote } from 'lucide-react';
 
 const testimonials = [
-  { name: "Sarah J.", role: "Web Designer", text: "FAP completely changed my business. I went from charging $500 per website to $3,000 in just two months." },
-  { name: "Mike T.", role: "Course Creator", text: "DPL gave me the confidence to launch. I made $10k on my first weekend." },
-  { name: "Elena R.", role: "Copywriter", text: "The templates and scripts inside FAP are worth 10x the price of admission. Highly recommended!" },
+  { text: "قبل البرنامج ده، كنت تايه تماماً في تسعير خدماتي أو إزاي أجيب عملاء. دلوقتي عندي سيستم واضح، وأخيراً بدأت أقفل عقود بتعكس القيمة الحقيقية لتعبي." },
+  { text: "أكبر تغيير مكنش بس في الدخل—كان في الثقة. أنا أخيراً فهمت الخطوات العملية لإطلاق أي منتج من غير التوتر والقلق اللي كنت بعيشهم كل مرة بحاول أبدأ حاجة جديدة." },
+  { text: "كنت دايماً حاسس إني لوحدي وبحاول أكتشف كل حاجة بنفسي. الخطوات اللي اتعلمتها هنا إديتني اللي كان ناقصني بالظبط: الوضوح، النظام، وراحة البال اللي مكنتش بحلم بيها." },
 ];
 
 export default function Testimonials() {
   return (
-    <section className="w-full py-20 px-4 bg-blue-700 flex flex-col items-center">
-      <div className="max-w-6xl w-full">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-4 text-white">Don't Just Take My Word For It</h2>
-          <p className="text-lg text-blue-100 max-w-2xl mx-auto">See what our students have accomplished using these frameworks.</p>
+    <section className="w-full py-32 px-4 bg-gray-50 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
+        <div className="text-center mb-20">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-extrabold mb-6 text-gray-900 tracking-tight"
+          >
+            تغيير حقيقي من ناس زيك بالظبط
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-xl text-gray-600 max-w-2xl mx-auto"
+          >
+            ده اللي الطلاب بيعيشوه بجد لما بيطبقوا الخطوات والأنظمة دي في شغلهم.
+          </motion.p>
         </div>
+
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((t, i) => (
-            <div key={i} className="bg-white p-8 rounded-2xl shadow-lg relative">
-              <div className="flex text-yellow-400 mb-4">
-                {[...Array(5)].map((_, j) => <Star key={j} size={20} fill="currentColor" />)}
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-white p-10 rounded-[2rem] shadow-xl shadow-gray-200/50 border border-gray-100 relative group"
+            >
+              <Quote size={40} className="text-gray-100 absolute top-8 left-8 rotate-12 group-hover:rotate-0 transition-transform duration-300 transform scale-x-[-1]" />
+              
+              <p className="text-gray-700 mb-8 text-lg leading-relaxed relative z-10 italic">"{t.text}"</p>
+              
+              <div className="flex items-center justify-between border-t border-gray-100 pt-6 mt-auto">
+                <div>
+                  <p className="font-bold text-gray-900">[اسم الطالب]</p>
+                  <p className="text-sm text-gray-500">[مجال الطالب]</p>
+                </div>
               </div>
-              <p className="text-gray-700 mb-6 italic">"{t.text}"</p>
-              <div>
-                <p className="font-bold text-gray-900">{t.name}</p>
-                <p className="text-sm text-gray-500">{t.role}</p>
-              </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
