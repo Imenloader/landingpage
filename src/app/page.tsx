@@ -1,8 +1,11 @@
 import HeroSection from "@/components/HeroSection";
-import VSLSection from "@/components/VSLSection";
+import TrustBar from "@/components/TrustBar";
 import IdentitySelector from "@/components/IdentitySelector";
 import ValueProposition from "@/components/ValueProposition";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
+import VSLSection from "@/components/VSLSection";
 import FuturePacing from "@/components/FuturePacing";
+import CourseBundleMockup from "@/components/CourseBundleMockup";
 import CourseModules from "@/components/CourseModules";
 import InstructorBio from "@/components/InstructorBio";
 import RawProofWall from "@/components/RawProofWall";
@@ -14,12 +17,15 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center w-full">
+    <main className="min-h-screen flex flex-col items-center w-full" dir="rtl">
       <HeroSection />
-      <VSLSection />
+      <TrustBar />
       <IdentitySelector />
       <ValueProposition />
+      <BeforeAfterSection />
+      <VSLSection />
       <FuturePacing />
+      <CourseBundleMockup />
       <CourseModules />
       <InstructorBio />
       <RawProofWall />
