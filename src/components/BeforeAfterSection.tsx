@@ -19,11 +19,8 @@ export default function BeforeAfterSection() {
               <Frown size={32} />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">حياتك دلوقتي (الإرهاق)</h3>
-            <div className="w-full aspect-video bg-slate-100 rounded-2xl border-2 border-dashed border-red-200 flex flex-col items-center justify-center relative group overflow-hidden mb-6">
-              <span className="text-slate-400 font-bold">صورة: شخص مرهق قدام اللاب توب</span>
-              <div className="absolute inset-0 bg-red-500/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-red-600 shadow-sm">Replace Image</span>
-              </div>
+            <div className="w-full aspect-video rounded-2xl overflow-hidden mb-6 relative shadow-inner">
+              <img src="/images/before_stress.jpg" alt="Exhausted freelancer" className="w-full h-full object-cover grayscale-[30%] contrast-125" />
             </div>
             <ul className="text-right space-y-3 w-full text-gray-600 font-medium">
               <li>❌ بتدور على عملاء كل يوم من الصفر</li>
@@ -39,11 +36,8 @@ export default function BeforeAfterSection() {
               <Smile size={32} />
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-6">حياتك بعد السيستم (التحكم)</h3>
-            <div className="w-full aspect-video bg-slate-100 rounded-2xl border-2 border-dashed border-emerald-300 flex flex-col items-center justify-center relative group overflow-hidden mb-6">
-              <span className="text-slate-400 font-bold">صورة: شخص مرتاح بيشرب قهوة وبيشوف مبيعات</span>
-              <div className="absolute inset-0 bg-emerald-500/10 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="bg-white px-4 py-2 rounded-full text-sm font-bold text-emerald-600 shadow-sm">Replace Image</span>
-              </div>
+            <div className="w-full aspect-video rounded-2xl overflow-hidden mb-6 relative shadow-[0_0_30px_rgba(16,185,129,0.2)]">
+              <img src="/images/after_control.jpg" alt="Relaxed and in control" className="w-full h-full object-cover saturate-110" />
             </div>
             <ul className="text-right space-y-3 w-full text-gray-600 font-medium">
               <li>✅ العملاء هما اللي بيطلبوا يشتغلوا معاك</li>
