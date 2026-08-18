@@ -16,16 +16,38 @@ export default function RawProofWall() {
   return (
     <section className="w-full py-16 px-4 bg-[#F8FAFC] relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-8">
+        <div className="text-center mb-12">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center gap-2 px-4 py-2 bg-red-100 text-red-600 rounded-full text-sm font-bold mb-6"
+          >
+            <span className="relative flex h-3 w-3">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+            </span>
+            بدون أي فلاتر أو تعديل
+          </motion.div>
+          
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-extrabold mb-6 text-[#0F172A] tracking-tight"
+            className="text-3xl md:text-5xl font-black text-[#0F172A] mb-4 tracking-tighter"
           >
-            مش كلام وخلاص.. دي رسايل حقيقية من موبايلي
+            مش كلام وخلاص.. دي <span className="text-emerald-600">رسايل حقيقية من موبايلي</span>
           </motion.h2>
-          <p className="text-gray-500 text-lg">بص بنفسك على اللي بيحصل لما تطبق السيستم صح.</p>
+          
+          <motion.p 
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.2 }}
+            className="text-gray-500 text-lg md:text-xl font-medium max-w-2xl mx-auto"
+          >
+            سكرين شوتس خام من محادثات الواتساب مع الطلبة. الأرقام والمبيعات اللي هتشوفها دي حقيقية ١٠٠٪ ونتائج شغل وتعب بجد.
+          </motion.p>
         </div>
 
         <div className="columns-1 md:columns-2 lg:columns-3 gap-6 space-y-6">
