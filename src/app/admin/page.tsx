@@ -26,14 +26,14 @@ export default function AdminPage() {
       setStatus('loading');
       addLog('Fetching current page.tsx from GitHub...');
       
-      const res = await fetch(\`https://api.github.com/repos/\${REPO_OWNER}/\${REPO_NAME}/contents/\${FILE_PATH}\`, {
+      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
         headers: {
-          'Authorization': \`Bearer \${githubToken}\`,
+          'Authorization': `Bearer ${githubToken}`,
           'Accept': 'application/vnd.github.v3+json'
         }
       });
 
-      if (!res.ok) throw new Error(\`GitHub API Error: \${res.statusText}\`);
+      if (!res.ok) throw new Error(`GitHub API Error: ${res.statusText}`);
 
       const data = await res.json();
       setFileSha(data.sha);
@@ -54,7 +54,7 @@ export default function AdminPage() {
       
       setStatus('idle');
     } catch (err: any) {
-      addLog(\`Error: \${err.message}\`);
+      addLog(`Error: ${err.message}`);
       setStatus('error');
     }
   };
@@ -69,13 +69,13 @@ export default function AdminPage() {
     if (!fileSha || !fileContent) return;
     
     const targetVersion = currentVersion === 'neuromarketing' ? 'original' : 'neuromarketing';
-    const confirmMsg = \`Are you sure you want to switch the live site to the \${targetVersion.toUpperCase()} version? This will push a commit to GitHub and trigger a Vercel deployment.\`;
+    const confirmMsg = `Are you sure you want to switch the live site to the ${targetVersion.toUpperCase()} version? This will push a commit to GitHub and trigger a Vercel deployment.`;
     
     if (!window.confirm(confirmMsg)) return;
 
     try {
       setStatus('loading');
-      addLog(\`Preparing to switch to \${targetVersion}...\`);
+      addLog(`Preparing to switch to ${targetVersion}...`);
 
       // Replace the exact boolean string
       let newContent = fileContent;
@@ -90,21 +90,21 @@ export default function AdminPage() {
 
       addLog('Pushing commit to GitHub API...');
       
-      const res = await fetch(\`https://api.github.com/repos/\${REPO_OWNER}/\${REPO_NAME}/contents/\${FILE_PATH}\`, {
+      const res = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}`, {
         method: 'PUT',
         headers: {
-          'Authorization': \`Bearer \${token}\`,
+          'Authorization': `Bearer ${token}`,
           'Accept': 'application/vnd.github.v3+json',
           'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-          message: \`chore(ab-test): toggle hero version to \${targetVersion} via admin panel\`,
+          message: `chore(ab-test): toggle hero version to ${targetVersion} via admin panel`,
           content: encodedContent,
           sha: fileSha
         })
       });
 
-      if (!res.ok) throw new Error(\`Failed to push commit: \${res.statusText}\`);
+      if (!res.ok) throw new Error(`Failed to push commit: ${res.statusText}`);
 
       addLog('✅ Success! Commit pushed to GitHub. Vercel is now deploying the changes.');
       setCurrentVersion(targetVersion);
@@ -114,7 +114,7 @@ export default function AdminPage() {
       setTimeout(() => fetchCurrentState(token), 3000);
 
     } catch (err: any) {
-      addLog(\`Error: \${err.message}\`);
+      addLog(`Error: ${err.message}`);
       setStatus('error');
     }
   };
@@ -159,7 +159,7 @@ export default function AdminPage() {
               <h2 className="text-xl font-bold text-slate-700 mb-6">Current Live Hero Version:</h2>
               
               <div className="flex items-center justify-center gap-8 mb-8">
-                <div className={\`flex flex-col items-center gap-2 \${currentVersion === 'original' ? 'opacity-100 scale-110' : 'opacity-40 grayscale'}\`}>
+                <div className={`flex flex-col items-center gap-2 ${currentVersion === 'original' ? 'opacity-100 scale-110' : 'opacity-40 grayscale'}`}>
                   <div className="w-16 h-16 rounded-full bg-slate-200 flex items-center justify-center border-4 border-white shadow-lg">
                     <span className="text-2xl">🧱</span>
                   </div>
@@ -167,10 +167,10 @@ export default function AdminPage() {
                 </div>
                 
                 <div className="w-16 h-1 bg-slate-200 rounded-full relative">
-                  <div className={\`absolute top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-indigo-600 shadow-md transition-all duration-500 \${currentVersion === 'neuromarketing' ? 'left-full -translate-x-full' : 'left-0'}\`} />
+                  <div className={`absolute top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-indigo-600 shadow-md transition-all duration-500 ${currentVersion === 'neuromarketing' ? 'left-full -translate-x-full' : 'left-0'}`} />
                 </div>
 
-                <div className={\`flex flex-col items-center gap-2 \${currentVersion === 'neuromarketing' ? 'opacity-100 scale-110' : 'opacity-40 grayscale'}\`}>
+                <div className={`flex flex-col items-center gap-2 ${currentVersion === 'neuromarketing' ? 'opacity-100 scale-110' : 'opacity-40 grayscale'}`}>
                   <div className="w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center border-4 border-white shadow-lg">
                     <span className="text-2xl">🧠</span>
                   </div>

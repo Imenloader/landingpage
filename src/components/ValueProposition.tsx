@@ -68,7 +68,7 @@ export default function ValueProposition() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="p-8 rounded-3xl bg-white border border-gray-100 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 group"
             >
-              <div className={\`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 \${feat.bg} group-hover:scale-110 transition-transform\`}>
+              <div className={`w-14 h-14 rounded-2xl flex items-center justify-center mb-8 ${feat.bg} group-hover:scale-110 transition-transform`}>
                 <feat.icon size={28} className={feat.color} />
               </div>
               <h3 className="text-2xl font-black mb-4 text-[#0F172A]">{feat.title}</h3>
