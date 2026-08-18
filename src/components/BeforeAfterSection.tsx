@@ -5,9 +5,9 @@ import { Frown, Smile } from 'lucide-react';
 
 export default function BeforeAfterSection() {
   return (
-    <section className="w-full py-24 px-4 bg-[#F8FAFC]">
+    <section className="w-full py-12 px-4 bg-[#F8FAFC]">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#0F172A] mb-4">الفرق بين الطريقة القديمة وسيستم FAP</h2>
           <p className="text-gray-500 text-lg">دي مش مجرد وعود.. ده الواقع اللي هتعيشه بنفسك لو طبقت صح.</p>
         </div>

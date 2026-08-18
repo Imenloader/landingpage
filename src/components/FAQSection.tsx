@@ -19,9 +19,9 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full py-32 px-4 bg-[#F8FAFC] flex flex-col items-center">
+    <section className="w-full py-16 px-4 bg-[#F8FAFC] flex flex-col items-center">
       <div className="max-w-3xl w-full">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

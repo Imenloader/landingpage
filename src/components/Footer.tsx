@@ -5,7 +5,7 @@ import { Globe, Link as LinkIcon, Mail } from 'lucide-react';
 export default function Footer() {
   return (
     <footer className="w-full pt-20 pb-10 px-4 bg-[#0F172A] text-gray-400 border-t border-white/10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12 mb-16">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center md:items-start gap-12 mb-8">
         
         <div className="text-center md:text-right max-w-sm">
           <h2 className="text-3xl font-extrabold text-white mb-4 tracking-tighter">FAP<span className="text-indigo-500">&</span>DPL</h2>

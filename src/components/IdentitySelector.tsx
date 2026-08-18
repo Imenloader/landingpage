@@ -7,7 +7,7 @@ export default function IdentitySelector() {
   const [selected, setSelected] = useState<string | null>(null);
 
   return (
-    <section className="w-full py-24 px-4 bg-[#FCFBF8]">
+    <section className="w-full py-12 px-4 bg-[#FCFBF8]">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F172A] mb-4">أنت مين في دول؟</h2>
         <p className="text-gray-500 mb-12 text-lg">عشان نوفرلك الحل الصح، اختار الوضع اللي بينطبق عليك حالياً:</p>

@@ -10,9 +10,9 @@ const timeline = [
 
 export default function FuturePacing() {
   return (
-    <section className="w-full py-24 px-4 bg-[#0F172A] text-white overflow-hidden relative">
+    <section className="w-full py-12 px-4 bg-[#0F172A] text-white overflow-hidden relative">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-extrabold mb-4">شكل حياتك بعد ما تبدأ معانا:</h2>
           <p className="text-gray-400">رحلة التحول مش هتاخد سنين.. دي خريطة الطريق بتاعتك.</p>
         </div>

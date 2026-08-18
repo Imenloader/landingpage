@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 export default function InstructorBio() {
   return (
-    <section className="w-full py-32 px-4 bg-[#0F172A] text-white relative overflow-hidden">
+    <section className="w-full py-16 px-4 bg-[#0F172A] text-white relative overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-blue-900/40 via-[#030712] to-[#030712] pointer-events-none"></div>
       
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-16 relative z-10">

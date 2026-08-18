@@ -12,7 +12,7 @@ const valueItems = [
 
 export default function ValueStack() {
   return (
-    <section className="w-full py-20 px-4 bg-[#F8FAFC] flex flex-col items-center">
+    <section className="w-full py-12 px-4 bg-[#F8FAFC] flex flex-col items-center">
       <div className="max-w-3xl w-full bg-[#FCFBF8] rounded-[2.5rem] shadow-2xl p-8 md:p-12 border-2 border-emerald-100 relative mt-10">
         <div className="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-emerald-600 rounded-full flex items-center justify-center text-white shadow-lg">
           <Gift size={32} />

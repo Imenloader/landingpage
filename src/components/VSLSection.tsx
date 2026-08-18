@@ -22,7 +22,7 @@ export default function VSLSection() {
   }, []);
 
   return (
-    <section className="w-full py-20 px-4 bg-[#0F172A] relative z-20 -mt-10">
+    <section className="w-full py-12 px-4 bg-[#0F172A] relative z-20 -mt-10">
       <div className="max-w-5xl mx-auto flex flex-col items-center">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}

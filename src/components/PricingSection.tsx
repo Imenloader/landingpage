@@ -6,9 +6,9 @@ import { Check, Sparkles, Clock, ShieldAlert } from 'lucide-react';
 
 export default function PricingSection() {
   return (
-    <section className="w-full py-32 px-4 bg-[#FCFBF8] relative">
+    <section className="w-full py-16 px-4 bg-[#FCFBF8] relative">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -63,7 +63,7 @@ export default function PricingSection() {
               </ul>
             </div>
 
-            <Link href="https://wa.me/201027609518?text=أهلاً، مهتم أعرف تفاصيل وسعر برنامج الـ Master Bundle (FAP + DPL) وهل في عروض متاحة حالياً؟" target="_blank" className="block w-full">
+            <Link href="https://wa.me/+201027609518?text=أهلاً، مهتم أعرف تفاصيل وسعر برنامج الـ Master Bundle (FAP + DPL) وهل في عروض متاحة حالياً؟" target="_blank" className="block w-full">
               <button className="w-full py-5 rounded-2xl bg-gradient-to-r from-emerald-500 to-emerald-700 text-white font-bold text-xl hover:shadow-[0_0_30px_rgba(16,185,129,0.4)] hover:-translate-y-1 transition-all flex items-center justify-center gap-3">
                 <span className="text-2xl">💬</span>
                 <span>اضغط هنا لمعرفة السعر والتفاصيل</span>

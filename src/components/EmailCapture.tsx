@@ -5,7 +5,7 @@ import { MessageCircle, ArrowLeft } from 'lucide-react';
 
 export default function EmailCapture() {
   return (
-    <section id="enroll-form" className="w-full py-24 px-4 bg-[#FCFBF8] flex flex-col items-center relative overflow-hidden">
+    <section id="enroll-form" className="w-full py-12 px-4 bg-[#FCFBF8] flex flex-col items-center relative overflow-hidden">
       <div className="absolute top-0 left-0 w-1/3 h-full bg-indigo-50/50 rounded-r-[100px] pointer-events-none"></div>
 
       <motion.div 

@@ -36,9 +36,9 @@ const benefits = [
 
 export default function ValueProposition() {
   return (
-    <section className="w-full py-32 px-4 bg-[#F8FAFC] relative overflow-hidden">
+    <section className="w-full py-16 px-4 bg-[#F8FAFC] relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20 relative z-10">
+        <div className="text-center mb-10 relative z-10">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -78,9 +78,9 @@ export default function ValueProposition() {
           ))}
         </div>
         
-        <div className="mt-16 text-center">
+        <div className="mt-8 text-center">
            <p className="text-gray-500 italic mb-4">جاهز تسيب الإرهاق ده وراك؟</p>
-           <button className="text-indigo-600 font-bold hover:text-indigo-800 transition-colors text-lg">&larr; أيوه، أنا عايز التغيير ده</button>
+           <a href="https://wa.me/+201027609518?text=أهلاً، أنا مهتم وعايز أبدأ التغيير ده" target="_blank" className="text-emerald-600 font-bold hover:text-emerald-800 transition-colors text-lg inline-block border-b-2 border-emerald-600 pb-1 hover:scale-105">&larr; أيوه، أنا عايز التغيير ده</a>
         </div>
       </div>
     </section>

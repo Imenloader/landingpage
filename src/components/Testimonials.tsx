@@ -29,9 +29,9 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="w-full py-24 px-4 bg-white relative">
+    <section className="w-full py-12 px-4 bg-white relative">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-8">
           <p className="text-emerald-600 font-bold mb-3 tracking-wide uppercase text-sm">قصص حقيقية</p>
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
