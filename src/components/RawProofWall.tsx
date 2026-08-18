@@ -40,7 +40,7 @@ export default function RawProofWall() {
             >
               <img 
                 src={src} 
-                alt={\`Screenshot Proof \${idx + 1}\`} 
+                alt={"Screenshot Proof " + (idx + 1)} 
                 className="w-full rounded-2xl shadow-lg hover:shadow-xl transition-shadow border border-gray-200"
                 loading="lazy"
               />
