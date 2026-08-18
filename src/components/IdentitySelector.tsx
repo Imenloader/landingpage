@@ -21,7 +21,7 @@ export default function IdentitySelector() {
               <Rocket size={28} />
             </div>
             <h3 className="text-2xl font-bold text-[#0F172A]">ببدأ من الصفر (مبتدئ)</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">لسه معنديش خبرة أو مهارة واضحة، وحاسس إني تايه وسط كمية المعلومات. عايز طريق واضح ياخدني من إيدي خطوة بخطوة لحد ما أجيب أول دولار.</p>
+            <p className="text-gray-600 text-sm leading-relaxed">لسه معنديش خبرة أو مهارة واضحة، وحاسس إني تايه وسط كمية المعلومات. عايز طريق واضح ياخدني من إيدي خطوة بخطوة لحد ما أجيب أول أرباحك.</p>
           </button>
 
           <button 

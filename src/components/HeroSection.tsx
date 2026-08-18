@@ -28,7 +28,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-tight md:leading-tight mb-8 tracking-tighter"
         >
-          السيستم الوحيد اللي هياخدك من <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">التوهان</span> إلى <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">أول 10,000 دولار</span> أونلاين
+          السيستم الوحيد اللي هياخدك من <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-orange-500">التوهان</span> إلى <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">أول 100,000 جنيه</span> أونلاين
         </motion.h1>
 
         <motion.p 
@@ -37,7 +37,7 @@ export default function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-lg md:text-xl text-gray-300 max-w-2xl mb-12 leading-relaxed"
         >
-          اكتشف الخلطة السرية (FAP + DPL) لبناء مصدر دخل دولاري مستقر من البيت، سواء كفريلانسر بيقفل ديلات كبيرة، أو كصانع محتوى بيبيع منتجات رقمية وهو نايم. بدون أي خبرة تقنية سابقة.
+          اكتشف الخلطة السرية (FAP + DPL) لبناء مصدر دخل مادي مستقر مستقر من البيت، سواء كفريلانسر بيقفل ديلات كبيرة، أو كصانع محتوى بيبيع منتجات رقمية وهو نايم. بدون أي خبرة تقنية سابقة.
         </motion.p>
         
         <motion.div 
