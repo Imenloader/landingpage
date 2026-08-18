@@ -15,15 +15,19 @@ export default function CourseBundleMockup() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="w-full max-w-5xl py-12 bg-slate-800 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(79,70,229,0.3)] relative flex items-center justify-center overflow-hidden"
+          className="w-full max-w-4xl py-24 bg-slate-800 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(79,70,229,0.3)] relative flex items-center justify-center overflow-hidden border-dashed"
         >
           <div className="absolute inset-0 bg-gradient-to-tr from-slate-900 via-indigo-900/40 to-slate-900 opacity-80"></div>
           
-          <div className="relative z-10 w-full px-4 flex flex-col md:flex-row items-center justify-center gap-12">
-            <img src="https://d1yei2z3i6k35z.cloudfront.net/14693084/68ebba962dc21_Untitleddesign3.png" alt="FAP Mockup" className="w-full max-w-[350px] md:max-w-[450px] hover:scale-105 transition-transform drop-shadow-[0_20px_50px_rgba(79,70,229,0.5)]" />
-            <img src="https://d1yei2z3i6k35z.cloudfront.net/14693084/6918c0aa2e266_ad522012-06fd-4a50-bb32-4d244170ad7e.png" alt="DPL Mockup" className="w-full max-w-[350px] md:max-w-[450px] hover:scale-105 transition-transform drop-shadow-[0_20px_50px_rgba(16,185,129,0.5)]" />
+          <div className="relative z-10 text-center px-4 flex flex-col items-center justify-center">
+            <span className="text-5xl mb-4 block">💻 📱 🖥️</span>
+            <h3 className="text-2xl font-bold text-white mb-2">صورة مجمعة (Mockup)</h3>
+            <p className="text-indigo-200 max-w-md mx-auto mt-2">
+              ضع هنا صورة احترافية تظهر الكورسات على شاشة لاب توب وموبايل.
+              <br/>
+              (استخدم موقع مثل Smartmockups.com لدمج الصور)
+            </p>
           </div>
-
         </motion.div>
       </div>
     </section>
