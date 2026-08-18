@@ -25,25 +25,17 @@ export default function HeroSection() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="flex flex-col gap-4 w-full sm:w-auto"
         >
-          {/* Primary CTA: Checkout */}
-          <Link 
-            href="/checkout"
-            className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#059669] text-white font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(5,150,105,0.4)]"
-          >
-            👈 تأكيد مكاني والبدء فوراً (الأماكن محدودة)
-            <ArrowLeft size={24} className="group-hover:-translate-x-1 transition-transform" />
-          </Link>
-
-          {/* Secondary CTA: WhatsApp */}
+          {/* Primary CTA: WhatsApp */}
           <a 
-            href="https://wa.me/1234567890"
+            href="https://wa.me/201000000000?text=%D8%A3%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%A3%D9%86%D8%A7%20%D9%85%D9%87%D8%AA%D9%85%20%D8%A8%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D9%88%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%AA%D9%81%D8%A7%D8%B5%D9%8A%D9%84%20%D8%A7%D9%84%D8%AF%D9%81%D8%B9."
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center justify-center gap-2 px-8 py-3 bg-transparent text-gray-400 hover:text-white font-medium rounded-full text-sm transition-all"
+            className="group relative flex items-center justify-center gap-3 px-8 py-5 bg-[#059669] text-white font-extrabold rounded-full text-xl transition-all hover:scale-105 shadow-[0_0_30px_rgba(5,150,105,0.4)]"
           >
-            <MessageCircle size={18} />
-            متردد؟ تواصل مع فريقنا على الواتساب
+            <MessageCircle size={24} className="group-hover:scale-110 transition-transform" />
+            تأكيد مكاني والدفع عبر الواتساب 👈
           </a>
+          <p className="text-center text-sm text-gray-400 mt-2">متوفر الدفع عبر إنستاباي، فودافون كاش، أو تحويل بنكي</p>
         </motion.div>
         
         <motion.p 
