@@ -1,3 +1,4 @@
+import HeroSection from "@/components/HeroSection";
 import HeroSectionNeuromarketing from "@/components/HeroSectionNeuromarketing";
 import TrustBar from "@/components/TrustBar";
 import IdentitySelector from "@/components/IdentitySelector";
@@ -16,10 +17,16 @@ import FAQSection from "@/components/FAQSection";
 import EmailCapture from "@/components/EmailCapture";
 import Footer from "@/components/Footer";
 
+// A/B TESTING SWITCH
+// Change this to 'false' to show the original HeroSection
+const USE_NEUROMARKETING_HERO = true;
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full" dir="rtl">
-      <HeroSectionNeuromarketing />
+      {/* Dynamic Hero Switch */}
+      {USE_NEUROMARKETING_HERO ? <HeroSectionNeuromarketing /> : <HeroSection />}
+      
       <TrustBar />
       <IdentitySelector />
       <ValueProposition />
