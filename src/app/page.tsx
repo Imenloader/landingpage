@@ -1,4 +1,4 @@
-import HeroSection from "@/components/HeroSection";
+import HeroSectionNeuromarketing from "@/components/HeroSectionNeuromarketing";
 import TrustBar from "@/components/TrustBar";
 import IdentitySelector from "@/components/IdentitySelector";
 import ValueProposition from "@/components/ValueProposition";
@@ -19,7 +19,7 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center w-full" dir="rtl">
-      <HeroSection />
+      <HeroSectionNeuromarketing />
       <TrustBar />
       <IdentitySelector />
       <ValueProposition />
