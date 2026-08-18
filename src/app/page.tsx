@@ -8,6 +8,7 @@ import FuturePacing from "@/components/FuturePacing";
 import CourseBundleMockup from "@/components/CourseBundleMockup";
 import CourseModules from "@/components/CourseModules";
 import InstructorBio from "@/components/InstructorBio";
+import Testimonials from "@/components/Testimonials";
 import RawProofWall from "@/components/RawProofWall";
 import ValueStack from "@/components/ValueStack";
 import PricingSection from "@/components/PricingSection";
@@ -28,6 +29,7 @@ export default function Home() {
       <CourseBundleMockup />
       <CourseModules />
       <InstructorBio />
+      <Testimonials />
       <RawProofWall />
       <ValueStack />
       <PricingSection />
