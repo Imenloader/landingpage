@@ -5,19 +5,19 @@ export default function TrustBar() {
   const logos = [
     {
       name: "Meta",
-      url: "https://upload.wikimedia.org/wikipedia/commons/7/7b/Meta_Platforms_Inc._logo.svg"
+      url: "https://cdn.simpleicons.org/meta/ffffff"
     },
     {
       name: "Facebook",
-      url: "https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg"
+      url: "https://cdn.simpleicons.org/facebook/ffffff"
     },
     {
       name: "Instagram",
-      url: "https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg"
+      url: "https://cdn.simpleicons.org/instagram/ffffff"
     },
     {
       name: "ChatGPT",
-      url: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg"
+      url: "https://cdn.simpleicons.org/openai/ffffff"
     }
   ];
 
@@ -31,13 +31,13 @@ export default function TrustBar() {
             <img 
               src={logo.url} 
               alt={logo.name} 
-              className="h-8 md:h-10 object-contain filter brightness-0 invert"
+              className="h-8 md:h-10 object-contain"
             />
           </div>
         ))}
-        {/* Custom Systeme.io text since finding a reliable raw SVG URL for it is tricky */}
+        {/* Custom Systeme.io text */}
         <div className="flex items-center justify-center opacity-50 hover:opacity-100 hover:scale-110 transition-all duration-300">
-            <span className="text-white font-extrabold text-2xl tracking-tighter">systeme.io</span>
+            <span className="text-white font-extrabold text-3xl tracking-tighter lowercase">systeme.io</span>
         </div>
       </div>
     </div>
