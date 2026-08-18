@@ -15,7 +15,7 @@ export default function CourseBundleMockup() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="w-full max-w-4xl aspect-[2/1] md:aspect-[2.5/1] bg-slate-800 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(79,70,229,0.3)] relative group cursor-pointer flex items-center justify-center overflow-hidden"
+          className="w-full max-w-4xl py-10 bg-slate-800 rounded-3xl border border-white/10 shadow-[0_0_50px_rgba(79,70,229,0.3)] relative group cursor-pointer flex items-center justify-center overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-tr from-slate-900 via-indigo-900/40 to-slate-900 opacity-80"></div>
           
