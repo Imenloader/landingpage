@@ -22,7 +22,7 @@ export default function EmailCapture() {
             <p className="text-indigo-100 mb-8 text-lg">إنت على بعد خطوات من تغيير كامل لحياتك المهنية. احجز مكانك قبل ما السعر يزيد.</p>
             
             <a 
-              href="https://wa.me/1234567890" 
+              href="https://wa.me/+201027609518?text=أهلاً، أنا جاهز أبدأ التغيير وعايز أعرف التفاصيل." 
               target="_blank"
               rel="noopener noreferrer"
               className="mt-8 flex items-center gap-3 px-6 py-5 bg-[#059669] rounded-xl hover:bg-[#1DA851] transition-colors shadow-[0_0_20px_rgba(37,211,102,0.3)]"
